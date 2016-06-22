@@ -1,0 +1,57 @@
+%YAML:1.0
+
+#------------------------------------------------------------------------------
+
+#STEREO CAMERA PARAMETERS
+#If D-LDB descriptor is used, the camera parameters must be configured.
+#This parameters correspond to an example for the KITTI dataset configuration.
+.
+#Left camera matrix
+ML: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 707.0921, 0, 601.8873, 0, 707.0921, 183.1104, 0, 0, 1 ]
+
+#Right camera matrix
+MR: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 707.0921, 0, 601.8873, 0, 707.0921, 183.1104, 0, 0, 1 ]
+
+#Left camera distortion parameters
+DL: !!opencv-matrix
+   rows: 5
+   cols: 1
+   dt: d
+   data: [ 0, 0, 0, 0, 0]
+
+#Right camera distortion parameters
+DR: !!opencv-matrix
+   rows: 5
+   cols: 1
+   dt: d
+   data: [ 0, 0, 0, 0, 0]
+
+#Rotation matrix
+R: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1, 0, 0, 0, 1, 0, 0, 0, 1 ]
+
+#Translation vector
+T: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ -537.2, 0, 0]
+
+#Color for disparity representation
+colormap: 0
+
+#Logaritmic disparity representation
+use_log: 1
+
+#------------------------------------------------------------------------------

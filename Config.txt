@@ -1,0 +1,91 @@
+%YAML:1.0
+
+#-----------------------------------------------------------------------------
+
+#DATASETS PARAMETERS
+
+#If the dataset is a sequence images -> 0. If it is a video -> 1. Two videos -> 2
+Frame_mode: 0
+
+#Path where the images of the tested dataset are located (if Frame_mode = 0)
+Images_path: ../../../Datasets/KITTI/data_odometry_color/sequences/06/image_2/
+
+#Path where the left stereo images of the tested dataset are located (if Frame_mode = 0 and Camera_type = 1)
+Images_path_left: ../../../Datasets/KITTI/data_odometry_color/sequences/06/image_2/
+
+#Path where the right stereo images of the tested dataset are located (if Frame_mode = 0 and Camera_type = 1)
+Images_path_right: ../../../Datasets/KITTI/data_odometry_color/sequences/06/image_3/
+
+#Path where the calibration file for stereo images is located (if Frame_mode = 0 and Camera_type = 1)
+Calibration_path: lib/d_ldb/Calibration.txt
+
+#If the dataset is composed of images, specify the format (if Frame_mode = 0)
+Images_format: png
+
+#Path where the video is located, including the video name (if Frame_mode = 1)
+Video_path_1: ../../../Datasets/Nordland/nordlandsbanen_spring.mp4
+
+#Additional video path for processing two videos (if Frame_mode = 2)
+Video_path_2: ../../../Datasets/Nordland/nordlandsbanen_winter.mp4
+
+#Numerical identifier for the first dataset image
+Initial_image: 0
+
+#Numerical identifier for the final dataset image
+Final_image: 1101
+
+#------------------------------------------------------------------------------
+
+#REPRESENTATION PARAMETERS
+
+#Name of the file where the similarity matrix is saved
+Txt_name: similarity.txt
+
+#Name of the image where the similarity matrix is printed
+Png_name: similarity.png
+
+#You can choose the similarity matrix color (Options: 0-11)
+Matrix_color: 7
+
+#If 1, the program shows the processed images
+Show_images: 0
+
+#------------------------------------------------------------------------------
+
+#DESCRIPTION AND MATCHING PARAMETERS
+
+#Choose between monocular (0), stereo (1) or panoramic images (2)
+Camera_type: 0
+
+#Choose between global (0) or grid-based (1) description
+Description_type: 0
+
+#Number of bits used in the patch for global image description (if Description_type = 0)
+Patch_size: 64
+
+#Size of the grid applied in x (if Description_type = 1)
+Grid_x: 1
+
+#Size of the grid applied in y (if Description_type = 1)
+Grid_y: 1
+
+#Number of panoramas applied (if Camera_type = 2)
+Panoramas: 6
+
+#Choose between illumination invariance (1) or not (0)
+Illumination_invariance: 0
+
+#Alpha value (if Illumination_invariance = 1)
+Alpha: 0.47
+
+#Name of the descriptor applied in the image description
+#Options: BRIEF, BRISK, ORB, FREAK, LDB, D-LDB, HOG, SIFT, SURF
+Image_descriptor: LDB
+
+#The number of images to be matched in sequence in each iteration
+Image_sequences: 1
+
+#Threshold value for considering loop closures (between 0 and 1) (disable = -1)
+Threshold: -1
+
+#------------------------------------------------------------------------------
