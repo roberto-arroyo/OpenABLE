@@ -23,10 +23,10 @@ described in "License.txt". In addition, if you use our open toolbox in any
 publication or work, you must cite the corresponding papers where the theory
 and the description of the implementation of OpenABLE has been published: 
 
-* R. Arroyo, L. M. Bergasa and E. Romera, "OpenABLE: An Open-source Toolbox
-for Application in Life-Long Visual Localization of Autonomous Vehicles",
-submitted to Intelligent Transportation Systems Conference (ITSC), Rio de
-Janeiro (Brazil), November 2016 (in review process).
+* R. Arroyo, P. F. Alcantarilla, L. M. Bergasa and E. Romera, "OpenABLE: An
+Open-source Toolbox for Application in Life-Long Visual Localization of
+Autonomous Vehicles", submitted to Intelligent Transportation Systems
+Conference (ITSC), Rio de Janeiro (Brazil), November 2016.
 
 * R. Arroyo, P. F. Alcantarilla, L. M. Bergasa and E. Romera, "Towards
 Life-Long Visual Localization using an Efficient Matching of Binary Sequences
