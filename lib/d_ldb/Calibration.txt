@@ -5,7 +5,7 @@
 #STEREO CAMERA PARAMETERS
 #If D-LDB descriptor is used, the camera parameters must be configured.
 #This parameters correspond to an example for the KITTI dataset configuration.
-.
+
 #Left camera matrix
 ML: !!opencv-matrix
    rows: 3
